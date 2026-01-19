@@ -3,12 +3,19 @@ package cen4802;
 
 public class Assignment1 {
 
-	public static int fibonacci(int n) {
+	/**
+     * Returns the nth term in the Fibonacci sequence using recursion.
+     *
+     * @param n the index of the term to compute (0-based)
+     * @return the nth Fibonacci number
+     */
+    public static int fibonacci(int n) {
         if (n <= 1) {
             return n;
         }
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
+
 	
 	public static void main(String[] args) {
 		int n = 10;
